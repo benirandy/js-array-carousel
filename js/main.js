@@ -60,7 +60,7 @@ nextDom.addEventListener('click',
                 console.log("Valore di activeImage all'inizio della gestione dell'evento: " + activeImage);
 
                 imagesWrapperDom[activeImage].classList.remove('show');
-                circlesDom[activeImage].classList.remove('current');
+
                 activeImage++;
                 thumbsDom[activeImage].classList.remove('active');
 
@@ -71,7 +71,6 @@ nextDom.addEventListener('click',
                 }
 
                 imagesWrapperDom[activeImage].classList.add('show');
-                circlesDom[activeImage].classList.add('current');
                 thumbsDom[activeImage].classList.add('active');
 
                 prevDom.classList.remove('hide');
@@ -98,10 +97,9 @@ prevDom.addEventListener('click',
             if (activeImage > 0) {
 
                 imagesWrapperDom[activeImage].classList.remove('show');
-                circlesDom[activeImage].classList.remove('current');
+
                 activeImage--;
                 imagesWrapperDom[activeImage].classList.add('show');
-                circlesDom[activeImage].classList.add('current');
 
                 nextDom.classList.remove('hide');
                 thumbsDom[activeImage].classList.remove('active');
@@ -119,7 +117,7 @@ prevDom.addEventListener('click',
 
 
             nextDom.classList.remove('hide');
-            if (activeImage == 1) {
+            if (activeImage == 0) {
                 prevDom.classList.add('hide');
             }
 

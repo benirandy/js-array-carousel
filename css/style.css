@@ -38,13 +38,12 @@
 }
 
 #prev {
-   top: 20px;
-   margin: auto;
+   left: 20px;
+   
 }
 
 #next {
-   bottom: 20px;
-   margin: auto;
+   right: 20px;
 }
 
 #next.hide {
